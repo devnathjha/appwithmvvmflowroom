@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment"
         tools:layout="@layout/fragment_home"
-        android:name="com.app.trukker.ui.home.HomeFragment"
+        android:name="com.app.testexample.ui.home.HomeFragment"
         android:label="Home" >
         <action
             android:id="@+id/action_homeFragment_to_detailsFragment"
@@ -19,10 +19,10 @@
             app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
-    <fragment
+    <!--<fragment
         android:id="@+id/loginFragment"
         tools:layout="@layout/fragment_home"
-        android:name="com.app.trukker.ui.home.HomeFragment"
+        android:name="com.app.testexample.ui.home.HomeFragment"
         android:label="Home" >
         <action
             android:id="@+id/action_loginFragment_to_detailsFragment"
@@ -31,18 +31,18 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
-    </fragment>
+    </fragment>-->
 
 
 
     <fragment
         android:id="@+id/detailsFragment"
         tools:layout="@layout/fragment_details"
-        android:name="com.app.trukker.ui.detail.DetailsFragment"
+        android:name="com.app.testexample.ui.detail.DetailsFragment"
         android:label="Details" >
         <argument
             android:name="drugDetail"
-            app:argType="com.app.trukker.data.model.AssociatedDrug" />
+            app:argType="com.app.testexample.data.model.AssociatedDrug" />
     </fragment>
 
 </navigation>

@@ -12,14 +12,14 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.app.trukker"
+        applicationId "com.app.testexample"
         minSdk 23
         targetSdk 32
         versionCode 1
         versionName "1.0"
 
         //testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        testInstrumentationRunner "com.app.trukker.utils.MainTestRunner"
+        testInstrumentationRunner "com.app.testexample.utils.MainTestRunner"
 
         buildConfigField 'String', 'BASE_URL', "\"https://run.mocky.io/v3/\""
     }
@@ -95,7 +95,7 @@ dependencies {
     //room library
     implementation 'androidx.room:room-runtime:2.4.1'
     kapt 'androidx.room:room-compiler:2.4.1'
-    implementation 'androidx.room:room-ktx:2.2.1'
+    implementation "androidx.room:room-ktx:2.4.1"
 
     // Testing dependencies
     kaptAndroidTest "com.google.dagger:hilt-android-compiler:$hiltVersion"
